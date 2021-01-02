@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sharedpreferences">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ChangePassword"></activity>
+        <activity android:name=".HomeAcvitity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MineActivity" />
+        <activity android:name=".setting" />
+        <activity android:name=".DataActivity" />
+        <activity android:name=".WriteDiaryActivity" />
+        <activity android:name=".FriendsActivity" />
+        <activity android:name=".CheckDiaryActivity" />
+        <activity
+            android:name=".playSong.PlaySongActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".songList.SongListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MaterialComponents"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+
+        <service
+            android:name=".player.PlayerService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+
+</manifest>

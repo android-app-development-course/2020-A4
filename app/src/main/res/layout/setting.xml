@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/setting_top"
+        android:background="@color/new_color"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/setting_return"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:text="← 返回"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            >
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="设置"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/changepw"
+        android:background="@color/new_color"
+        android:layout_below="@id/setting_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        >
+
+    </Button>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/about_app"
+        android:background="@color/new_color"
+        android:layout_below="@+id/changepw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于每天"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        >
+
+    </Button>
+
+
+</RelativeLayout>

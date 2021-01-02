@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/new_color"
+    >
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/title_2"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        android:text="每天"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:background="@drawable/solid_bg"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/inputac_2"
+        android:layout_below="@+id/title_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/register_ac_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="账号:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/reg_account"
+            android:layout_toRightOf="@id/register_ac_tv"
+            android:background="@null"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/solid_bg"
+        android:id="@+id/inputpw_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/inputac_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/register_pw_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="密码:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_toRightOf="@+id/register_pw_tv"
+            android:background="@null"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/register_bt"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle_btn"
+        android:layout_below="@+id/inputpw_2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="注册"
+        android:textColor="@color/new_color"
+        android:textSize="15dp" />
+</RelativeLayout>

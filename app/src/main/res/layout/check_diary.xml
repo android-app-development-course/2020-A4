@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/write_diary_top"
+        android:background="@color/new_color"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/returnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:text=" ← 返回"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/delete"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/edit_diary"
+            android:background="@drawable/delete">
+
+        </Button>
+        <Button
+            android:id="@+id/edit_diary"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/confirm">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/check_diary_title"
+        android:layout_below="@+id/write_diary_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline_black"
+        android:hint="未起标题"
+        android:textSize="25dp"
+        android:gravity="center"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/check_diary_content"
+        android:layout_below="@+id/check_diary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="  无内容"
+        >
+    </EditText>
+
+</RelativeLayout>
